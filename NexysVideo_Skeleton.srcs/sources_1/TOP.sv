@@ -33,6 +33,7 @@ module TOP (
    input        BTND, //-- Button Down.
    input        BTNL, //-- Button Left.
    input        BTNR, //-- Button Right.
+   input [7:0]  SW,   //-- Toggle switch.
 
    output       UART_TX_OUT,
    input        UART_RX_IN,
