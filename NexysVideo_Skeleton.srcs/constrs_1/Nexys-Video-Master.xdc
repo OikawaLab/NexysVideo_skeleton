@@ -36,6 +36,12 @@ set_property -dict { PACKAGE_PIN C22 IOSTANDARD LVCMOS12 } [get_ports { BTNL }];
 set_property -dict { PACKAGE_PIN D14 IOSTANDARD LVCMOS12 } [get_ports { BTNR }]; #IO_L6P_T0_16 Sch=btnr
 set_property -dict { PACKAGE_PIN F15 IOSTANDARD LVCMOS12 } [get_ports { BTNU }]; #IO_0_16 Sch=btnu
 set_property -dict { PACKAGE_PIN G4  IOSTANDARD LVCMOS15 } [get_ports { CPU_RESETN }]; #IO_L12N_T1_MRCC_35 Sch=cpu_resetn
+set_false_path -from [get_ports BTNC];
+set_false_path -from [get_ports BTND];
+set_false_path -from [get_ports BTNL];
+set_false_path -from [get_ports BTNR];
+set_false_path -from [get_ports BTNU];
+set_false_path -from [get_ports CPU_RESETN];
 
 
 ## Switches
