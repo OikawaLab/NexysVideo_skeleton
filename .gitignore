@@ -1,0 +1,10 @@
+#
+# .gitignore
+#
+
+# Emacs backup files 
+*~
+
+# temporary files
+vivado.log
+vivado.jou
